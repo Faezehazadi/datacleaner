@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: datacleaner
+Version: 0.1.0
+Summary: A simple data cleaning package for CSV files
+Author: Your Name
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# DataCleaner
+A simple Python package for cleaning CSV data.
+
+## Features
+- Remove NaN values
+- Drop unnecessary columns
+- Rename columns
+- Save cleaned data to a new file
+
+## Usage
+```python
+from datacleaner import clean_data
+
+df = clean_data("data.csv", dropna=True, drop_columns=["col1"], rename_columns={"old":"new"}, output="cleaned.csv")
+print(df.head())
